@@ -3,6 +3,9 @@ from client import GptSalesClient
 from token_1 import api_key
 from token_2 import TG_TOKEN
 
+bot = telebot.TeleBot(TG_TOKEN)
+gpt_client = GptSalesClient(api_key=api_key)
+
 # Словарь для хранения истории сообщений для каждого пользователя
 user_histories = {}
 # Словарь для хранения CRM-данных каждого пользователя
