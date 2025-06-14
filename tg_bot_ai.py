@@ -1,14 +1,7 @@
 import telebot
 from client import GptSalesClient
-import os
-
-# Получаем токены из переменных окружения для безопасности
-api_key = os.environ.get("OPENAI_API_KEY")
-TG_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-
-# Создаём бота и GPT клиент
-bot = telebot.TeleBot(TG_TOKEN)
-gpt_client = GptSalesClient(api_key=api_key)
+from token_1 import api_key
+from token_2 import TG_TOKEN
 
 # Словарь для хранения истории сообщений для каждого пользователя
 user_histories = {}
