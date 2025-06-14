@@ -1,247 +1,62 @@
+<h1 align = "center"> 🚗🤖 Telegram AI Seller Bot </h1>
+
+<p align="center">
+<strong>Telegram AI Seller Bot</strong> — интеллектуальный Telegram-бот для автоматизации общения с клиентами в автомобильном бизнесе. Бот собирает CRM-данные, использует GPT для диалогов и помогает менеджерам эффективно взаимодействовать с покупателями.
+</p>
+
+---
+
+<h2 align = "center"> 🎞️ Демо | Demo </h2>
+
 <div align="center">
 
-# Telegram AI Seller Bot
+[![Demo GIF](https://github.com/DokiMakuro4ka/TgBotAiSeller/blob/main/demo.gif)
 
 </div>
 
+---
+
+<div align="center"><b>✨ Возможности | Features ✨</b></div>
+
 <div align="center">
 
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b>🇷🇺 Описание</b></td>
-<td align="center" width="50%"><b>🇬🇧 Description</b></td>
-</tr>
-<tr>
-<td align="justify" width="50%" style="text-align:justify;">
+|              🇷🇺 <b>Русский</b>              |               🇬🇧 <b>English</b>               |
+|:--------------------------------------------:|:---------------------------------------------:|
+| 📝 Интерактивная регистрация клиента         | 📝 Interactive client registration            |
+| 👋 Индивидуальное приветствие                | 👋 Personalized greeting                      |
+| 💬 Диалог с ИИ с учётом CRM                  | 💬 AI dialogue using CRM data                 |
+| 🧹 Очистка истории и CRM                     | 🧹 Resetting history and CRM with `/reset`    |
+| 🔒 Безопасная работа с токенами              | 🔒 Secure token management                    |
 
-Этот проект — Telegram-бот-продавец, использующий искусственный интеллект (GPT/OpenAI) для автоматизации диалогов с клиентами и повышения эффективности продаж. Бот анализирует запросы пользователей, использует данные CRM для персонализации предложений, сохраняет историю диалогов и может выполнять апселл услуг или товаров. Проект легко адаптируется под различные ниши (авто, недвижимость, услуги и др.).
-
-</td>
-<td align="justify" width="50%" style="text-align:justify;">
-
-This project is a Telegram AI sales bot that leverages GPT/OpenAI to automate customer interactions and boost sales efficiency. The bot analyzes user requests, utilizes CRM data for personalized offers, stores conversation history, and can upsell products or services. The project is easily adaptable for various domains (automotive, real estate, services, etc.).
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b>🇷🇺 Файлы проекта</b></td>
-<td align="center" width="50%"><b>🇬🇧 Project Files</b></td>
-</tr>
-<tr>
-<td align="justify" width="50%" style="text-align:justify;">
+## 🚀 Быстрый старт | Quick Start
 
-- <b>main.py</b> — основной файл с логикой Telegram-бота и интеграцией с AI.
-- <b>gpt_client.py</b> — модуль для работы с OpenAI/GPT API.
-- <b>crm_data.py</b> — пример модели или интерфейса для подгрузки CRM-данных.
-- <b>token.py</b> — файл с токенами API (Telegram и OpenAI).
-- <b>requirements.txt</b> — зависимости для запуска проекта.
+<div align="center"><b>🚦 Шаги запуска | Getting Started Steps 🚦</b></div>
 
-</td>
-<td align="justify" width="50%" style="text-align:justify;">
+<div align="center">
 
-- <b>main.py</b> — main file with Telegram bot logic and AI integration.
-- <b>gpt_client.py</b> — module for interaction with OpenAI/GPT API.
-- <b>crm_data.py</b> — example model or interface for CRM data loading.
-- <b>token.py</b> — file with API tokens (Telegram and OpenAI).
-- <b>requirements.txt</b> — dependencies for running the project.
+| <div align="center"><b>🇷🇺 Шаги (RU)</b></div> | <div align="center"><b>🇬🇧 Steps (EN)</b></div> |
+|:----------------------------------------------:|:----------------------------------------------:|
+| <div align="center">1️⃣ Клонируйте репозиторий:<br><code>git clone https://github.com/DokiMakuro4ka/TgBotAiSeller.git</code><br><code>cd TgBotAiSeller</code></div> | <div align="center">1️⃣ Clone the repository:<br><code>git clone https://github.com/DokiMakuro4ka/TgBotAiSeller.git</code><br><code>cd TgBotAiSeller</code></div> |
+| <div align="center">2️⃣ Установите зависимости:<br><code>pip install -r requirements.txt</code></div> | <div align="center">2️⃣ Install dependencies:<br><code>pip install -r requirements.txt</code></div> |
+| <div align="center">3️⃣ Создайте переменные окружения:<br><code>TELEGRAM_TOKEN</code> — токен Telegram-бота<br><code>OPENAI_API_KEY</code></div> | <div align="center">3️⃣ Create environment variables:<br><code>TELEGRAM_TOKEN</code> — your Telegram bot token<br><code>OPENAI_API_KEY</code></div> |
+| <div align="center">4️⃣ Запустите бота:<br><code>python tg_bot_ai.py</code></div> | <div align="center">4️⃣ Run the bot:<br><code>python tg_bot_ai.py</code></div> |
 
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b>🇷🇺 Быстрый старт</b></td>
-<td align="center" width="50%"><b>🇬🇧 Quick Start</b></td>
-</tr>
-<tr>
-<td align="justify" width="50%" style="text-align:justify;">
+## 🛠️ Пример использования | Usage Example
 
-<b>1. Клонируйте репозиторий</b>
+<div align="center"><b>🔄 Сценарии | Scenarios 🔄</b></div>
 
-```sh
-git clone https://github.com/DokiMakuro4ka/TgBotAiSeller
-cd TgBotAiSeller
-```
+<div align="center">
 
-<b>2. Установите зависимости</b>
-
-```sh
-pip install -r requirements.txt
-```
-
-<b>Минимальный requirements.txt:</b>
-```
-pyTelegramBotAPI
-openai
-```
-
-<b>3. Настройте ключи</b>
-
-- В <code>token.py</code> укажите ваши ключи:
-  ```python
-  OPENAI_API_KEY = "your-openai-api-key"
-  TELEGRAM_TOKEN = "your-telegram-bot-token"
-  ```
-
-<b>4. Запустите бота</b>
-
-```sh
-python main.py
-```
-
-</td>
-<td align="justify" width="50%" style="text-align:justify;">
-
-<b>1. Clone the repository</b>
-
-```sh
-git clone https://github.com/DokiMakuro4ka/TgBotAiSeller
-cd TgBotAiSeller
-```
-
-<b>2. Install dependencies</b>
-
-```sh
-pip install -r requirements.txt
-```
-
-<b>Minimal requirements.txt:</b>
-```
-pyTelegramBotAPI
-openai
-```
-
-<b>3. Configure keys</b>
-
-- In <code>token.py</code>, set your keys:
-  ```python
-  OPENAI_API_KEY = "your-openai-api-key"
-  TELEGRAM_TOKEN = "your-telegram-bot-token"
-  ```
-
-<b>4. Run the bot</b>
-
-```sh
-python main.py
-```
-
-</td>
-</tr>
-</table>
-
----
-
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b>🇷🇺 Как работает бот</b></td>
-<td align="center" width="50%"><b>🇬🇧 How the bot works</b></td>
-</tr>
-<tr>
-<td align="justify" width="50%" style="text-align:justify;">
-
-- После запуска бот приветствует пользователя и может показать пример CRM-записи.
-- Пользователь отправляет текст — бот отвечает с учётом CRM-информации.
-- Для сброса истории диалога используйте команду <b>/reset</b>.
-- История диалога индивидуальна для каждого пользователя (по user_id), хранится в памяти или базе (зависит от реализации).
-- Бот может быть расширен для интеграции с реальной CRM.
-
-</td>
-<td align="justify" width="50%" style="text-align:justify;">
-
-- After launch, the bot greets the user and can show a sample CRM record.
-- The user sends text — the bot replies using CRM information.
-- Use the <b>/reset</b> command to reset the dialog history.
-- Dialog history is stored per user (by user_id) in memory or database (implementation-dependent).
-- The bot can be extended to integrate with a real CRM.
-
-</td>
-</tr>
-</table>
-
----
-
-<table width="100%">
-<tr>
-<td align="center" colspan="2"><b>🇬🇧 Sample CRM record used in the bot</b></td>
-</tr>
-<tr>
-<td align="left" colspan="2" style="text-align:left;">
-
-```python
-crm_record = {
-    "name": "Иван",
-    "last_purchase": "Tesla Model 3",
-    "budget": 5000000,
-    "deal_status": "Lead"
-}
-```
-
-</td>
-</tr>
-</table>
-
----
-
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b>🇷🇺 Безопасность</b></td>
-<td align="center" width="50%"><b>🇬🇧 Security</b></td>
-</tr>
-<tr>
-<td align="justify" width="50%" style="text-align:justify;">
-
-<b>Не публикуйте ваши реальные API-ключи и токены в публичных репозиториях!</b>
-- Добавьте <code>token.py</code> в <code>.gitignore</code> перед публикацией.
-- Для production используйте переменные окружения для хранения ключей.
-
-</td>
-<td align="justify" width="50%" style="text-align:justify;">
-
-<b>Do not publish your real API keys or tokens in public repositories!</b>
-- Add <code>token.py</code> to <code>.gitignore</code> before publishing.
-- Use environment variables for key storage in production.
-
-</td>
-</tr>
-</table>
-
----
-
-<table width="100%">
-<tr>
-<td align="center" width="50%"><b>🇷🇺 Возможные доработки</b></td>
-<td align="center" width="50%"><b>🇬🇧 Possible Improvements</b></td>
-</tr>
-<tr>
-<td align="justify" width="50%" style="text-align:justify;">
-
-- Интеграция с реальной CRM и базой данных.
-- Хранение истории диалогов в базе.
-- Обработка вложений (фото, файлы).
-- Расширение логики апселла и рекомендаций.
-- Мультиаккаунтная поддержка.
-- Мультиязычность.
-
-</td>
-<td align="justify" width="50%" style="text-align:justify;">
-
-- Integration with a real CRM and database.
-- Store dialog history in DB.
-- Attachments (photos, files) support.
-- Extended upsell/recommendation logic.
-- Multi-account support.
-- Multilingual support.
-
-</td>
-</tr>
-</table>
+| <div align="center"><b>🇷🇺 Русский</b></div> | <div align="center"><b>🇬🇧 English</b></div> |
+|:--------------------------------------------:|:--------------------------------------------:|
+| <div align="justify">1️⃣ Пользователь пишет <code>/start</code> — бот просит ввести имя, последнюю покупку, бюджет и статус сделки.<br><br>2️⃣ После заполнения CRM можно общаться с ИИ: бот учитывает введённые данные.<br><br>3️⃣ Команда <code>/reset</code> сбрасывает всю историю и CRM для нового диалога.</div> | <div align="justify">1️⃣ User types <code>/start</code> — the bot asks for name, last purchase, budget, and deal status.<br><br>2️⃣ After CRM is filled, you can chat with AI: the bot uses your provided data.<br><br>3️⃣ The <code>/reset</code> command clears all chat and CRM history for a fresh start.</div> |
 
 </div>
